@@ -32,7 +32,7 @@ const questions = ref([
 
 const quizCompleted = ref(false);
 const currentQuestion = ref(0);
-const scores = computed(() => {
+const score = computed(() => {
   let value = 0;
   questions.value.map((q) => {
     if (q.selected == q.answer) {
